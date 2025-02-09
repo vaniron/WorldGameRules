@@ -28,7 +28,7 @@ public class WorldGameRuleCommand {
             new SingleDimension(),
         };
 
-        LiteralArgumentBuilder<CommandSourceStack> gamerule = literal("gamerule").requires(Permissions.require("world-gamerules.commands.gamerule", 2));
+        LiteralArgumentBuilder<CommandSourceStack> gamerule = literal("grule").requires(Permissions.require("world-gamerules.commands.gamerule", 2));
         for (DimensionSelector dimensionSelector : dimensionSelectors) {
             DimensionSelector.Builders getRule = dimensionSelector.builder();
             DimensionSelector.Builders setRule = dimensionSelector.builder();
